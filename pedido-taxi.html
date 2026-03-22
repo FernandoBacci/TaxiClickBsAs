@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedir Taxi | TaxiClickBsAs</title>
+
+    <!-- CSS -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header contenedor">
+        <h1 class="titulo">🚖 PEDIR TAXI</h1>
+            <a href="index.html" class="boton volver">Volver</a>                
+                                        
+            </div>
+    </header>
+
+    <!-- HERO -->
+    <section>
+        
+    </section>
+
+    <!-- INFO -->
+     <main class="contenedor sombra">
+        <div class="info-superior">
+            <h2>📍 TaxiClickBsAs</h2>
+            <h3>Solicitá tu taxi en Buenos Aires</h3>
+        </div>   
+    <div class="info">
+        <p>Completá el formulario para solicitar tu taxi y enviarlo por WhatsApp.</p>
+    </div>
+
+    <!-- FORMULARIO -->
+    <section>
+        
+        <!--<main class="contenedor sombra">-->
+
+        <form class="formulario" id="formTaxi">
+
+            <fieldset>
+
+                <legend>PEDIDO DE TAXI</legend>
+
+                <div class="contenedor-campos">
+
+                    <!-- FECHA -->
+                    <div class="campo">
+                        <label>📅 Fecha</label>
+                        <input type="date" id="fecha" required>
+                    </div>
+
+                    <!-- HORA -->
+                    <div class="campo">
+                        <label>⏰ Hora</label>
+                        <input type="time" id="hora" required>
+                    </div>
+
+                    <!-- ORIGEN -->
+                    <div class="campo">
+                        <label>📍 Origen</label>
+                        <input type="text" id="origen" placeholder="Ej: Av. Corrientes 1234" required>
+                    </div>
+
+                    <!-- DESTINO -->
+                    <div class="campo">
+                        <label>📍 Destino</label>
+                        <input type="text" id="destino" placeholder="Ej: Aeropuerto Ezeiza" required>
+                    </div>
+
+                    <!-- NOMBRE -->
+                    <div class="campo">
+                        <label>👤 Nombre</label>
+                        <input type="text" id="nombre" required>
+                    </div>
+
+                    <!-- CELULAR -->
+                    <div class="campo">
+                        <label>📱 Celular</label>
+                        <input type="tel" id="celular" required>
+                    </div>
+
+                    <!-- VUELO -->
+                    <div class="campo">
+                        <label>✈️ Vuelo / Barco (opcional)</label>
+                        <input type="text" id="vuelo">
+                    </div>
+
+                    <!-- EQUIPAJE -->
+                    <div class="campo">
+                        <label>🧳 ¿Llevás equipaje?</label>
+                        <div>
+                            <label><input type="radio" name="equipaje" value="Sí"> Sí</label>
+                            <label><input type="radio" name="equipaje" value="No"> No</label>
+                        </div>
+                    </div>
+
+                    <!-- NOTA -->
+                    <div class="campo campo-full">
+                        <label>📝 Nota</label>
+                        <textarea id="nota"></textarea>
+                    </div>
+
+                </div>
+
+                <!-- BOTÓN -->
+                <div class="alinear-derecha flex">
+                    <input class="boton w-sm-100" type="submit" value="Enviar">
+                                       
+                </div>
+
+            </fieldset>
+
+        </form>
+
+    </main>
+    <footer class="footer">
+        <p>Todos los derechos reservados. TaxiClickBsAs</p>
+    </footer>
+</section>
+    <!-- JS -->
+    <script src="java-script/main.js"></script>
+
+</body>
+</html>
